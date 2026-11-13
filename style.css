@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #505e74;
+}
+
+
+
+
+.team-section {
+    padding: 60px 8%;
+}
+
+
+
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    color: #ffffff82;
+    margin-bottom: 12px;
+}
+
+.heading p {
+    color: #b1ac51dc;
+    font-size: 16px;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+
+
+
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.651);
+    width: 33.33%;
+    padding: 30px 22px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+
+
+.profile-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 18px;
+}
+
+
+
+
+.profile-card h2 {
+    font-size: 23px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+
+
+.profile-card h4 {
+    color: #536dfe;
+    margin-bottom: 15px;
+}
+
+
+
+
+.description {
+    color: #413f3f;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.skills span {
+    background-color: #eef0ff;
+    color: #4058e0;
+
+    padding: 7px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+
+
+button {
+    background-color: #4059ec;
+    color: rgb(174, 170, 170);
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 25px;
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #314be3;
+}
+
+
+
+
+.extra-info {
+    display: none;
+
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee90;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .profile-card {
+        width: 45%;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .team-section {
+        padding: 40px 20px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+}
